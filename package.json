@@ -2,7 +2,7 @@
   "name": "ai-agents-welcome-page",
   "version": "1.0.0",
   "description": "AI Agents Welcome Page using PrimeVue components",
-  "homepage": "https://[YOUR_USERNAME].github.io/[YOUR_REPO_NAME]",
+  "homepage": "https://aiagent-webpage.github.io/[YOUR_REPO_NAME]",
   "main": "index.js",
   "scripts": {
     "dev": "vite",

@@ -90,7 +90,7 @@
                 <div class="agent-illustration">
                   <div class="character-container">
                     <div class="character-avatar">
-                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" alt="Alex - Sales Agent" class="agent-image" />
+                      <img src="https://example.com/agent-alex-3d.png" alt="Alex - Sales Agent" class="agent-image" />
                     </div>
                   </div>
                 </div>
@@ -144,7 +144,7 @@
                 <div class="agent-illustration">
                   <div class="character-container">
                     <div class="character-avatar">
-                      <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=120&h=120&fit=crop&crop=face" alt="Sarah - Marketing Agent" class="agent-image" />
+                      <img src="https://example.com/agent-sarah-3d.png" alt="Sarah - Marketing Agent" class="agent-image" />
                     </div>
                   </div>
                 </div>
@@ -198,7 +198,7 @@
                 <div class="agent-illustration">
                   <div class="character-container">
                     <div class="character-avatar">
-                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face" alt="Mike - Support Agent" class="agent-image" />
+                      <img src="https://example.com/agent-mike-3d.png" alt="Mike - Support Agent" class="agent-image" />
                     </div>
                   </div>
                 </div>
