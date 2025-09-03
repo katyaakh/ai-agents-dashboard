@@ -71,12 +71,9 @@
                 </div>
                 
                 <div class="agent-illustration">
-                  <div class="character-container">
-                    <div class="character-avatar">
-                      <img src="/assets/ag1.png" alt="Hire AI Agent" class="agent-image" />
-                    </div>
-                  </div>
+                  <img src="/assets/ag1.png" alt="Hire AI Agent" class="agent-image" />
                 </div>
+
               </div>
             </template>
           </Card>
@@ -125,11 +122,7 @@
                 </div>
                 
                 <div class="agent-illustration">
-                  <div class="character-container">
-                    <div class="character-avatar">
-                      <img src="/assets/ag1.png" alt="Alex - Sales Agent" class="agent-image" />
-                    </div>
-                  </div>
+                  <img src="/assets/ag1.png" alt="Alex - Sales Agent" class="agent-image" />
                 </div>
               </div>
             </template>
@@ -179,11 +172,7 @@
                 </div>
                 
                 <div class="agent-illustration">
-                  <div class="character-container">
-                    <div class="character-avatar">
-                      <img src="/assets/ag2.png" alt="Sarah - Marketing Agent" class="agent-image" />
-                    </div>
-                  </div>
+                  <img src="/assets/ag2.png" alt="Sarah - Marketing Agent" class="agent-image" />
                 </div>
               </div>
             </template>
@@ -233,11 +222,7 @@
                 </div>
                 
                 <div class="agent-illustration">
-                  <div class="character-container">
-                    <div class="character-avatar">
-                      <img src="/assets/ag1.png" alt="Mike - Support Agent" class="agent-image" />
-                    </div>
-                  </div>
+                  <img src="/assets/ag1.png" alt="Mike - Support Agent" class="agent-image" />
                 </div>
               </div>
             </template>
@@ -662,30 +647,34 @@ const checklistItem2 = ref(false)
   align-items: center;
   justify-content: center;
   position: relative;
+  background: transparent !important;
+  overflow: hidden;
+  border-radius: 0 !important;
 }
 
-.character-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
 
-.character-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
 
 /* Agent Image Styles */
 .agent-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  display: block !important;
+}
+
+/* Force remove any circular styling */
+.agent-illustration img,
+.agent-image,
+img[src*="ag1.png"],
+img[src*="ag2.png"] {
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 
 /* Section 2: Statistics */
