@@ -70,8 +70,8 @@
                   </div>
                 </div>
                 
-                <div class="agent-illustration">
-                  <img src="/assets/ag1.png" alt="Hire AI Agent" class="agent-image" />
+                <div class="agent-image-container">
+                  <img src="/assets/ag1.png" alt="Hire AI Agent" class="rectangular-agent-image" />
                 </div>
 
               </div>
@@ -121,8 +121,8 @@
                   </div>
                 </div>
                 
-                <div class="agent-illustration">
-                  <img src="/assets/ag1.png" alt="Alex - Sales Agent" class="agent-image" />
+                <div class="agent-image-container">
+                  <img src="/assets/ag1.png" alt="Alex - Sales Agent" class="rectangular-agent-image" />
                 </div>
               </div>
             </template>
@@ -171,8 +171,8 @@
                   </div>
                 </div>
                 
-                <div class="agent-illustration">
-                  <img src="/assets/ag2.png" alt="Sarah - Marketing Agent" class="agent-image" />
+                <div class="agent-image-container">
+                  <img src="/assets/ag2.png" alt="Sarah - Marketing Agent" class="rectangular-agent-image" />
                 </div>
               </div>
             </template>
@@ -221,8 +221,8 @@
                   </div>
                 </div>
                 
-                <div class="agent-illustration">
-                  <img src="/assets/ag1.png" alt="Mike - Support Agent" class="agent-image" />
+                <div class="agent-image-container">
+                  <img src="/assets/ag1.png" alt="Mike - Support Agent" class="rectangular-agent-image" />
                 </div>
               </div>
             </template>
@@ -638,8 +638,8 @@ const checklistItem2 = ref(false)
   border: 1px solid #ec4899;
 }
 
-/* Character Illustration Section */
-.agent-illustration {
+/* Agent Image Container - Rectangular */
+.agent-image-container {
   flex-shrink: 0;
   width: 200px;
   height: 200px;
@@ -647,34 +647,22 @@ const checklistItem2 = ref(false)
   align-items: center;
   justify-content: center;
   position: relative;
-  background: transparent !important;
+  background: transparent;
   overflow: hidden;
-  border-radius: 0 !important;
 }
 
 
 
-/* Agent Image Styles */
-.agent-image {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  border-radius: 0 !important;
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-  display: block !important;
-}
-
-/* Force remove any circular styling */
-.agent-illustration img,
-.agent-image,
-img[src*="ag1.png"],
-img[src*="ag2.png"] {
-  border-radius: 0 !important;
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
+/* Rectangular Agent Image Styles */
+.rectangular-agent-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  display: block;
 }
 
 /* Section 2: Statistics */
@@ -994,9 +982,11 @@ img[src*="ag2.png"] {
     flex-direction: column;
   }
   
-  .agent-illustration {
+  .agent-image-container {
     width: 100%;
     height: 120px;
+    background: transparent;
+    border-radius: 0;
   }
   
   .agent-stats-row {
