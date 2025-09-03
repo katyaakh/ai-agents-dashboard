@@ -30,16 +30,53 @@
           <!-- Hire AI Agent Card -->
           <Card class="hire-agent-card">
             <template #content>
-              <div class="card-content">
-                <div class="card-icon">
-                  <Button 
-                    icon="pi pi-plus" 
-                    class="p-button-rounded p-button-success"
-                    size="large"
-                  />
+              <div class="agent-card-content">
+                <div class="agent-info-section">
+                  <div class="agent-header">
+                    <Tag value="New" severity="info" class="agent-category" />
+                    <Button 
+                      icon="pi pi-plus" 
+                      class="p-button-rounded p-button-success"
+                      size="small"
+                    />
+                  </div>
+                  
+                  <div class="agent-details">
+                    <h3 class="agent-name">Hire AI Agent</h3>
+                    <p class="agent-role">Add new team member</p>
+                    
+                    <div class="agent-stats-row">
+                      <div class="stat-item">
+                        <i class="pi pi-plus-circle stat-icon"></i>
+                        <span class="stat-text">Unlimited options</span>
+                      </div>
+                      <div class="stat-item">
+                        <i class="pi pi-star-fill stat-icon star-icon"></i>
+                        <span class="stat-text">Top rated</span>
+                      </div>
+                    </div>
+                    
+                    <p class="agent-description">
+                      Discover and hire the perfect AI agent for your team. Browse through our extensive collection of specialized agents.
+                    </p>
+                    
+                    <div class="agent-price">Starting from $29.99/month</div>
+                    
+                    <Button 
+                      label="Explore Agents" 
+                      class="p-button-success cta-button"
+                      size="large"
+                    />
+                  </div>
                 </div>
-                <div class="card-title">Hire AI Agent</div>
-                <div class="card-subtitle">Explore their capabilities</div>
+                
+                <div class="agent-illustration">
+                  <div class="character-container">
+                    <div class="character-avatar">
+                      <img src="/assets/ag1.png" alt="Hire AI Agent" class="agent-image" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </template>
           </Card>
@@ -453,39 +490,30 @@ const checklistItem2 = ref(false)
 
 .hire-agent-card {
   background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border: 1px solid #10b981;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Hire Agent Card - Special Styling */
+.hire-agent-card .agent-category {
+  background-color: #dbeafe !important;
+  color: #1d4ed8 !important;
   border: none;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  gap: 16px;
-  padding: 24px;
-  text-align: center;
-}
-
-.card-icon {
-  margin-bottom: 16px;
-}
-
-.card-title {
-  font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 1.125rem;
-  color: #111827;
-  margin-bottom: 8px;
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  border-radius: 20px;
 }
 
-.card-subtitle {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 0.875rem;
-  color: #6b7280;
-  line-height: 1.5;
+.hire-agent-card .agent-name {
+  color: #047857;
+}
+
+.hire-agent-card .agent-price {
+  color: #047857;
+  font-weight: 600;
 }
 
 /* Custom Agent Card Styles */
@@ -630,7 +658,6 @@ const checklistItem2 = ref(false)
   flex-shrink: 0;
   width: 200px;
   height: 200px;
-  background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -658,6 +685,7 @@ const checklistItem2 = ref(false)
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0;
 }
 
 /* Section 2: Statistics */
