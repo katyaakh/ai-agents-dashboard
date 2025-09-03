@@ -629,6 +629,7 @@ const checklistItem2 = ref(false)
 .agent-illustration {
   flex-shrink: 0;
   width: 200px;
+  height: 200px;
   background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);
   display: flex;
   align-items: center;
@@ -648,12 +649,14 @@ const checklistItem2 = ref(false)
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* Agent Image Styles */
 .agent-image {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
