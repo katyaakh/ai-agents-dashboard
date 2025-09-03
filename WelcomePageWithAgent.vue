@@ -90,7 +90,7 @@
                 <div class="agent-illustration">
                   <div class="character-container">
                     <div class="character-avatar">
-                      <img src="https://example.com/agent-alex-3d.png" alt="Alex - Sales Agent" class="agent-image" />
+                      <img src="./assets/ag1.png" alt="Alex - Sales Agent" class="agent-image" />
                     </div>
                   </div>
                 </div>
@@ -144,7 +144,7 @@
                 <div class="agent-illustration">
                   <div class="character-container">
                     <div class="character-avatar">
-                      <img src="https://example.com/agent-sarah-3d.png" alt="Sarah - Marketing Agent" class="agent-image" />
+                      <img src="./assets/ag2.png" alt="Sarah - Marketing Agent" class="agent-image" />
                     </div>
                   </div>
                 </div>
@@ -198,7 +198,7 @@
                 <div class="agent-illustration">
                   <div class="character-container">
                     <div class="character-avatar">
-                      <img src="https://example.com/agent-mike-3d.png" alt="Mike - Support Agent" class="agent-image" />
+                      <img src="./assets/ag1.png" alt="Mike - Support Agent" class="agent-image" />
                     </div>
                   </div>
                 </div>
